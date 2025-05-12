@@ -2,7 +2,7 @@
 
 // Detecta o idioma com base na URL
 const path = window.location.pathname;
-const jsonUrl = path.includes('/pt/') ? '../assets/js/langPt.json' : '../assets/js/langEn.json';
+const jsonUrl = path.includes('/pt/') ? 'https://roginaro.github.io/pilgrimSupport/assets/js/langPt.json' : 'https://roginaro.github.io/pilgrimSupport/assets/js/langEn.json';
 fetch(jsonUrl)
     .then(response => response.json())
     .then(lang => {
@@ -20,3 +20,4 @@ fetch(jsonUrl)
         });
     })
     .catch(error => console.error('Erro ao carregar JSON:', error));
+
