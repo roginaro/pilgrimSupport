@@ -1,8 +1,11 @@
 {
-	"infos":{
+	"home":{
 		"title":"Ponto de Apoio a Peregrinos Vilarinho"
 	},
 	"others":{},
 	"pharmacy":{},
-	"restaurant":{}
+	"restaurant":{},
+	"infos":{
+		"title":"Ponto de Apoio a Peregrinos Vilarinho"
+	},
 }
