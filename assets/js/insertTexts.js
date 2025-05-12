@@ -1,5 +1,9 @@
 
-fetch('../assets/js/langPt.json')
+
+// Detecta o idioma com base na URL
+const path = window.location.pathname;
+const jsonUrl = path.includes('/pt/') ? '../assets/js/langPt.json' : '../assets/js/langEn.json';
+fetch(jsonUrl)
     .then(response => response.json())
     .then(lang => {
         document.querySelectorAll('[data-i18n]').forEach(el => {

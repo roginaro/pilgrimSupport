@@ -1,0 +1,17 @@
+{
+	"home":{
+		"title":"Vilarinho Pilgrim Support Point",
+		"desc":"Choose one of the options below to find out more information.",
+		"btn":{
+			"pharmacy":"Pharmacy",
+			"restaurant":"Restaurant",
+			"transfer":"Transfer"
+		}
+	},
+	"others":{},
+	"pharmacy":{},
+	"restaurant":{},
+	"infos":{
+		"title":"Ponto de Apoio a Peregrinos Vilarinho"
+	}
+}

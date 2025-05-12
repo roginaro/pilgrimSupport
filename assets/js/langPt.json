@@ -1,6 +1,12 @@
 {
 	"home":{
-		"title":"Ponto de Apoio a Peregrinos Vilarinho"
+		"title":"Ponto de Apoio a Peregrinos Vilarinho",
+		"desc":"Escolha uma das opções abaixo para saber mais informações.",
+		"btn":{
+			"pharmacy":"Farmácia",
+			"restaurant":"Restaurante",
+			"transfer":"Transfer"
+		}
 	},
 	"others":{},
 	"pharmacy":{},
