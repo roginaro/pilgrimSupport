@@ -1,17 +1,35 @@
 {
-	"home":{
-		"title":"Ponto de Apoio a Peregrinos Vilarinho",
-		"desc":"Escolha uma das opções abaixo para saber mais informações.",
-		"btn":{
-			"pharmacy":"Farmácia",
-			"restaurant":"Restaurante",
-			"transfer":"Transfer"
+	"home": {
+		"title": "Ponto de Apoio a Peregrinos Vilarinho",
+		"desc": "Escolha uma das opções abaixo para saber mais informações.",
+		"btn": {
+			"pharmacy": "Farmácia",
+			"restaurant": "Restaurante",
+			"transfer": "Transfer",
+			"others": "Outros",
+			"infos": "Informações"
 		}
 	},
-	"others":{},
-	"pharmacy":{},
-	"restaurant":{},
-	"infos":{
-		"title":"Ponto de Apoio a Peregrinos Vilarinho"
+	"others": {},
+	"pharmacy": {},
+	"restaurant": {
+		"title": "Restaurantes",
+		"restaurants": [
+			{
+				"name": "Adega Regional Faria",
+				"address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
+				"openingHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00" ,
+				"contact": "919762265"
+			},
+			{
+				"name": "Adega Regional Faria",
+				"address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
+				"openingHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00" ,
+				"contact": "919762265"
+			}
+		]
+	},
+	"infos": {
+		"title": "Ponto de Apoio a Peregrinos Vilarinho"
 	}
 }
