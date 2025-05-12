@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Detalhes do Restaurante</title>
+  <title data-i18n="restaurant.rest_1_Name"></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
@@ -14,18 +14,17 @@
   <div class="container mt-5">
     <div class="card">
       <div class="card-header text-center">
-        <h2 data-i18n="restaurant.restaurantName">Nome do Restaurante</h2>
+        <h2 data-i18n="restaurant.rest_1_Name"></h2>
       </div>
       <div class="card-body">
-        <p data-i18n="restaurant.restaurantDescription">Descrição simples do restaurante.</p>
-        <h5>Horários de Funcionamento</h5>
-        <p data-i18n="restaurant.restaurantOpeningHours">terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00
-        </p>
-        <h5>Endereço</h5>
+        <p data-i18n="restaurant.rest_1_Desc"></p>
+        <h5 data-i18n="restaurant.lbl_OpeningHours"></h5>
+        <p data-i18n="restaurant.rest_1_OpeningHours"></p>
+        <h5 data-i18n="restaurant.lbl_Adress"></h5>
         <p>
           <a href="https://maps.app.goo.gl/CTStV7VWVaDnWWsT8" target="_blank" class="text-decoration-none text-primary">
             <i class="fas fa-map-marker-alt"></i>
-            <span data-i18n="restaurant.restaurantAddress">Endereço do Restaurante</span>
+            <span data-i18n="restaurant.restaurantAddress"></span>
           </a>
         </p>
         <div class="text-center mt-4">
@@ -37,7 +36,7 @@
     </div>
     <div class="text-center mt-4">
       <a href="../index.html" class="btn btn-secondary">
-        <i class="bi bi-arrow-left"></i> Voltar
+        <i class="bi bi-arrow-left"data-i18n="btnGeral.return"></i>
       </a>
     </div>
   </div>
