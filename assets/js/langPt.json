@@ -14,16 +14,17 @@
 	"pharmacy": {},
 	"restaurant": {
 		"title": "Restaurantes",
-		"restaurantName": "Adega Regional Faria",
-		"restaurantAddress": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"restaurantOpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
-		"restaurantContact": "919762265",
-		"restaurant2Name": "Adega Regional Faria",
-		"restaurant2Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"restaurant2OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
-		"restaurant2Contact": "919762265"
+		"rest_1_Name": "Adega Regional Faria",
+		"rest_1_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
+		"rest_1_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
+		"rest_1_Contact": "919762265",
+		"rest_2_Name": "Adega Regional Faria",
+		"rest_2_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
+		"rest_2_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
+		"rest_2_Contact": "919762265"
+		
 	},
 	"infos": {
-		"title": "Ponto de Apoio a Peregrinos Vilarinho"
-	}
+			"title": "Ponto de Apoio a Peregrinos Vilarinho"
+		}
 }

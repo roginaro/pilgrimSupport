@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,33 +10,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-<body>
-  <div class="container mt-5">
-    <h2 class="mb-4 text-center" data-i18n="restaurant.title"><i class="fas fa-solid fa-pills menu-icon"></i></h2>
 
+<body>
+  <div class="container text-center mt-5">
+    <div class="logo-img"></div>
+    <h2 class="mb-4 page-title">
+      <i class="fas fa-solid fa-pills menu-icon"></i>
+      <span data-i18n="restaurant.title"></span>
+    </h2>
     <div class="list-group">
       <div class="list-group-item">
-        <h5 class="mb-1" data-i18n="restaurant.restaurantName"></h5>
-        <p class="mb-1" data-i18n="restaurant.restaurantAddress"></p>
-        <small data-i18n="restaurant.restaurantOpeningHours"></small>
-        <small data-i18n="restaurantContact"></small>
+        <h5 class="mb-1" data-i18n="rest_1_Name"></h5>
+        <p class="mb-1" data-i18n="rest_1_Address"></p>
+        <small data-i18n="rest_1_OpeningHours"></small>
+        <small data-i18n="rest_1_Contact"></small>
+        <!-- Ícone de "ver mais" -->
+        <div class="text-end mt-2">
+          <a href="#" class="text-primary" title="Ver mais detalhes">
+            <i class="fas fa-chevron-right"></i> <!-- Ícone de seta -->
+          </a>
+        </div>
       </div>
       <div class="list-group-item">
-        <h5 class="mb-1" data-i18n="restaurant.restaurant2Name"></h5>
-        <p class="mb-1" data-i18n="restaurant.restaurant2Address"></p>
-        <small data-i18n="restaurant.restaurant2OpeningHours"></small>
-        <small data-i18n="restaurant.restaurant2Contact"></small>
+        <h5 class="mb-1" data-i18n="rest_2_Name"></h5>
+        <p class="mb-1" data-i18n="rest_2_Address"></p>
+        <small data-i18n="rest_2_OpeningHours"></small>
+        <small data-i18n="rest_2_Contact"></small>
       </div>
     </div>
-
     <div class="text-center mt-4">
       <a href="../index.html" class="btn btn-secondary">
         <i class="bi bi-arrow-left"></i> Voltar
       </a>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="../../assets/js/insertTexts.js"></script>
+  <script src="../../assets/js/insertTexts.js"></script>
 </body>
+
 </html>

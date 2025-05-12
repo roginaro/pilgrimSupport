@@ -1,9 +1,18 @@
 
 
 // Detecta o idioma com base na URL
+
 const path = window.location.pathname;
-const jsonUrl = path.includes('/pt/') ? 'https://roginaro.github.io/pilgrimSupport/assets/js/langPt.json' : 'https://roginaro.github.io/pilgrimSupport/assets/js/langEn.json';
+const langCode = path.includes('/pt/') ? 'Pt' : 'En';
+
+//Descomente esta linha para evitar cache durante o desenvolvimento
+//Comente esta linha para produção (sem cache buster)
+const cacheBuster = `?v=${Date.now()}`;
+
+const jsonUrl = `https://roginaro.github.io/pilgrimSupport/assets/js/lang${langCode}.json${cacheBuster}`;
+
 fetch(jsonUrl)
+
     .then(response => response.json())
     .then(lang => {
         console.log(lang);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes do Restaurante</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header text-center">
+        <h2 data-i18n="restaurant.restaurantName">Nome do Restaurante</h2>
+      </div>
+      <div class="card-body">
+        <p data-i18n="restaurant.restaurantDescription">Descrição simples do restaurante.</p>
+        <h5>Horários de Funcionamento</h5>
+        <p data-i18n="restaurant.restaurantOpeningHours">terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00
+        </p>
+        <h5>Endereço</h5>
+        <p>
+          <a href="https://maps.app.goo.gl/CTStV7VWVaDnWWsT8" target="_blank" class="text-decoration-none text-primary">
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-i18n="restaurant.restaurantAddress">Endereço do Restaurante</span>
+          </a>
+        </p>
+        <div class="text-center mt-4">
+          <a href="https://wa.me/5511999999999" class="btn btn-success" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contato via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="../index.html" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Voltar
+      </a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/js/insertTexts.js"></script>
+</body>
+
+</html>
