@@ -6,6 +6,7 @@ const jsonUrl = path.includes('/pt/') ? '../assets/js/langPt.json' : '../assets/
 fetch(jsonUrl)
     .then(response => response.json())
     .then(lang => {
+        console.log(lang);
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const path = el.getAttribute('data-i18n').split('.');
             let value = lang;
