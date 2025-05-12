@@ -10,7 +10,7 @@ const langCode = path.includes('/pt/') ? 'Pt' : 'En';
 const cacheBuster = `?v=${Date.now()}`;
 
 const jsonUrl = `https://roginaro.github.io/pilgrimSupport/assets/js/lang${langCode}.json${cacheBuster}`;
-
+ console.log(jsonUrl);
 fetch(jsonUrl)
 
     .then(response => response.json())

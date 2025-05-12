@@ -1,6 +1,7 @@
 {
 	"btnGeral":{
-		"return":"Voltar"
+		"return":"Voltar",
+		"contactWhats":"Contato via WhatsApp"
 	},
 	"home": {
 		"title": "Ponto de Apoio a Peregrinos Vilarinho",
@@ -23,7 +24,7 @@
 		"rest_1_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
 		"rest_1_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
 		"rest_1_Contact": "919762265",
-		"rest_1_Desc": "919762265",
+		"rest_1_Desc": "Descrição Basica",
 		"rest_2_Name": "Adega Regional Faria",
 		"rest_2_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
 		"rest_2_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
