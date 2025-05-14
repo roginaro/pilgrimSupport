@@ -31,7 +31,17 @@
 		"business_2_Desc": "Descrição Basica"
 
 	},
-	"pharmacy": {},
+	"pharmacy": {
+		"title": "Farmacias",
+		"lbl_OpeningHours":"Horários de Funcionamento",
+		"lbl_Adress":"Morada",
+		"lbl_viewMore":"Ver mais",
+		"pharma_Name": "Farmácia Rei",
+		"pharma_Address": "R. Nova 546, 4485-410 Macieira da Maia",
+		"pharma_OpeningHours": "segunda a sexta,08:30 - 20:30 / sábado 09:00 - 13:00 e 14:30 - 19:00",
+		"pharma_Contact": "252661610",
+		"pharma_Desc": "Descrição Basica"
+	},
 	"restaurant": {
 		"title": "Restaurantes",
 		"lbl_OpeningHours":"Horários de Funcionamento",
@@ -39,12 +49,12 @@
 		"lbl_viewMore":"Morada",
 		"rest_1_Name": "Adega Regional Faria",
 		"rest_1_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"rest_1_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
+		"rest_1_OpeningHours": "terça a sabado, 12:00 - 15:00 e 19:30 - 22:30 / domingo, 11:00 - 15:00",
 		"rest_1_Contact": "919762265",
 		"rest_1_Desc": "Descrição Basica",
 		"rest_2_Name": "Adega Regional Faria",
 		"rest_2_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"rest_2_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
+		"rest_2_OpeningHours": "terça a sabado, 12:00 - 15:00 e 19:30 - 22:30 / domingo, 11:00 - 15:00",
 		"rest_2_Contact": "919762265",
 		"rest_2_Desc": "919762265"
 	},
