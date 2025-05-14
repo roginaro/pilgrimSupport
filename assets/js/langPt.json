@@ -17,7 +17,7 @@
 	"others": {},
 	"pharmacy": {},
 	"restaurant": {
-		"title": "Restaurantes.",
+		"title": "Restaurantes",
 		"lbl_OpeningHours":"Horários de Funcionamento",
 		"lbl_Adress":"Morada",
 		"rest_1_Name": "Adega Regional Faria",
