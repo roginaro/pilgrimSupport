@@ -1,0 +1,28 @@
+{
+    "pharmacies": [
+        {
+            "id": "pharma_1",
+            "name": "Farmácia Rei",
+            "address": "R. Nova 546, 4485-410 Macieira da Maia",
+            "hours": "Segunda a Sexta: 08:30-20:30 | Sábado: 09:00-13:00 e 14:30-19:00",
+            "contact": "252661610",
+            "mapsLink": "https://maps.app.goo.gl/exemplo1",
+            "whatsapp": "351912345678",
+            "instagram": "https://instagram.com/farmaciacentral",
+            "facebook": "https://facebook.com/farmaciacentral",
+            "services": ["Medicamentos", "produtos de beleza", "atendimento 24h."]
+        },
+        {
+            "id": "pharma_2",
+            "name": "Drogaria Saúde",
+            "address": "R. das Flores, 45 - Bairro Novo",
+            "hours": "Segunda a Sexta: 08:30-20:30 | Sábado: 09:00-13:00 e 14:30-19:00 | Domingo: Fechado",
+            "contact": "351987654321",
+            "mapsLink": "https://maps.app.goo.gl/exemplo2",
+            "whatsapp": "351987654321",
+            "instagram": "https://instagram.com/drogariasaude",
+            "facebook": "https://facebook.com/drogariasaude",
+            "services": ["Farmácia popular", "vacinação", "cosméticos."]
+        }
+    ]
+}

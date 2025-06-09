@@ -1,37 +1,59 @@
 {
-	"btnGeral":{
-		"return":"Back"
-	},
-	"home":{
-		"title":"Vilarinho Pilgrim Support Point",
-		"desc":"Choose one of the options below to find out more information.",
-		"btn":{
-			"pharmacy":"Pharmacy",
-			"restaurant":"Restaurant",
-			"transfer":"Transfer",
-			"others": "Outros",
-			"infos": "Informações"
-		}
-	},
-	"others":{},
-	"pharmacy":{},
-	"restaurant": {
-		"title": "Restaurantes",
-		"rest_1_Name": "Adega Regional Faria",
-		"rest_1_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"rest_1_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
-		"rest_1_Contact": "919762265",
-		"rest_1_Desc": "919762265",
-		"rest_2_Name": "Adega Regional Faria",
-		"rest_2_Address": "R. da Ponte de Ave 830, 4485-389 Macieira da Maia",
-		"rest_2_OpeningHours": "terça a sabado,12:00–15:00,19:30–22:30 / domingo,11:00–15:00",
-		"rest_2_Contact": "919762265",
-		"rest_2_Desc": "919762265"
-	},
-	"details":{
-		"title":"Ponto de Apoio a Peregrinos Vilarinho"
-	},
-	"infos":{
-		"title":"Ponto de Apoio a Peregrinos Vilarinho"
-	}
+    "btnGeral": {
+        "return": "Back",
+        "contactWhats": "Contact via WhatsApp"
+    },
+    "home": {
+        "title": "Vilarinho Pilgrim Support Point",
+        "desc": "Choose one of the options below to find out more information.",
+        "btn": {
+            "pharmacy": "Pharmacy",
+            "useful_services": "Useful Services",
+            "restaurant": "Restaurant",
+            "others": "Others",
+            "infos": "Information"
+        }
+    },
+    "useful_services": {
+        "title": "Useful Services",
+        "desc": "Essential services for pilgrims.",
+        "services": {
+            "transfer": {
+                "name": "Transfer",
+                "desc": "Transportation services."
+            },
+            "lavandaria": {
+                "name": "Scented Moon Laundry",
+                "desc": "Washing, drying, and ironing services."
+            },
+            "mercado": {
+                "name": "Market New Street",
+                "desc": "Market with food and multipurpose products."
+            }
+        },
+        "lbl_viewMore": "See more"    
+    },
+    "others": {
+        "title": "Others",
+        "lbl_OpeningHours": "Opening Hours",
+        "lbl_Address": "Address",
+        "lbl_viewMore": "See more"
+    },
+    "pharmacy": {
+        "title": "Pharmacies",
+        "lbl_OpeningHours": "Opening Hours",
+        "lbl_Address": "Address",
+        "lbl_viewMore": "See more"
+    },
+    "restaurant": {
+        "title": "Restaurants",
+        "lbl_OpeningHours": "Opening Hours",
+        "lbl_Address": "Address",
+        "lbl_viewMore": "See more"
+    },
+    "infos": {
+        "title": "Information",
+        "titleWhats": "For more information, contact us via WhatsApp:",
+        "infoWhats": "Contact us via WhatsApp"
+    }
 }

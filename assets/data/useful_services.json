@@ -1,0 +1,84 @@
+{
+    "services": [
+        {
+            "id": "transfer",
+            "name": "Transfers",
+            "desc": "Serviços de transportes.",
+            "description": "Transporte rápido e seguro para destinos estratégicos.",
+            "image": "../../assets/img/transfer.jpg",
+            "destinations": [
+                {
+                    "name": "Barcelos",
+                    "time": "40 min",
+                    "cost": "€25",
+                    "schedule": ["08h", "12h", "16h"]
+                },
+                {
+                    "name": "Central de Camionagem da Póvoa",
+                    "time": "20 min",
+                    "cost": "€15",
+                    "schedule": ["07h", "11h", "15h"]
+                },
+                {
+                    "name": "Outlet Vila do Conde",
+                    "time": "30 min",
+                    "cost": "€20",
+                    "schedule": ["09h", "13h", "17h"]
+                }
+            ],
+            "bus_departures": [
+                {
+                    "destination": "Barcelos",
+                    "times": ["07h45", "11h30", "17h00"],
+                    "cost": "€10"
+                },
+                {
+                    "destination": "Central de Camionagem da Póvoa",
+                    "times": ["08h00", "12h15", "18h30"],
+                    "cost": "€8"
+                },
+                {
+                    "destination": "Outlet Vila do Conde",
+                    "times": ["09h30", "14h00", "19h45"],
+                    "cost": "€2,50"
+                }
+            ],
+            "tour_companies": [
+                {
+                    "name": "TravelPeregrino",
+                    "contact": "351912345678",
+                    "whatsapp": "351912345678"
+                },
+                {
+                    "name": "Viagens Express",
+                    "contact": "351987654321",
+                    "whatsapp": "351987654321"
+                }
+            ]
+        },
+        {
+            "id": "lavandaria",
+            "name": "Lavandaria Lua Perfumada",
+            "desc": "Serviços de lavagem, secagem e engomadoria de roupas.",
+            "description": "Sabemos que a caminhada pode ser intensa e, por isso, oferecemos um serviço de lavandaria rápido, prático e acessível, pensado especialmente para quem está no caminho.",
+            "image": "../../assets/img/laundry.jpg",
+            "features": [
+                "✅ Lava e seca no mesmo dia",
+                "✅ Sabão e amaciador incluídos",
+                "✅ Preços justos e descontos promocionais",
+                "✅ Entrega no alojamento ou retirada no local"
+            ],
+            "hours": "Segunda a Sábado: 08:30-20:30 | Domingo: sob consulta",
+            "contact_info": "Precisa de lavar suas roupas hoje mesmo? Fale connosco no WhatsApp ou dirija-se à receção."
+        },
+        {
+            "id": "mercado",
+            "name": "Mercado Rua Nova",
+            "desc": "Mercado de alimentos e produtos multiuso.",
+            "description": "Se está a caminho e precisa reabastecer, aqui tem de tudo um pouco: comidas, bebidas, higiene e utilidades num só lugar!",
+            "image": "../../assets/img/market.jpg",
+            "hours": "Aberto de Segunda a Sábado: 08:30-20:30 | Domingo: 09:00-13:00 e 14:30-19:00",
+            "contact_info": "Passe por aqui antes de seguir viagem. A sua próxima etapa começa melhor preparado!"
+        }
+    ]
+}
