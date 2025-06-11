@@ -36,7 +36,7 @@
   <script src="../../assets/js/insertTexts.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      fetch("/assets/data/useful_services.json?v=" + Date.now()) // Caminho correto do JSON
+      fetch("../../assets/data/useful_services.json?v=" + Date.now()) // Caminho correto do JSON
         .then(response => response.json())
         .then(data => {
           const servicesList = document.getElementById("services-list");
