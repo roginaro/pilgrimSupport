@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const serviceId = params.get("id");
 
-    fetch("/assets/data/useful_services.json?v=" + Date.now()) 
+    fetch("https://roginaro.github.io/pilgrimSupport/assets/data/useful_services.json?v=" + Date.now()) 
         .then(response => response.json())
         .then(data => {
             const service = data.services.find(s => s.id === serviceId);
