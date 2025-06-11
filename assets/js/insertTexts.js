@@ -3,22 +3,23 @@ const path = window.location.pathname;
 const langCode = path.includes('/pt/') ? 'Pt' : 'En';
 
 // Evita cache durante o desenvolvimento
-const cacheBuster = `?v=${Date.now()}`;
+const cacheBuster = '?v=${Date.now()}';
 
 // URLs dos arquivos JSON
 const jsonFiles = {
-    restaurants: `../../assets/data/restaurants.json${cacheBuster}`,
-    pharmacies: `../../assets/data/pharmacies.json${cacheBuster}`,
-    others: `../../assets/data/others.json${cacheBuster}`,
-    useful_services: `../../assets/data/useful_services.json${cacheBuster}`,
-    lang: `../../assets/js/lang${langCode}.json${cacheBuster}`
+    restaurants: '../assets/data/restaurants.json',
+    pharmacies: '../assets/data/pharmacies.json',
+    others: '../assets/data/others.json',
+    // others: '../../assets/data/others.json${cacheBuster}',
+    useful_services: '../assets/data/useful_services.json',
+    lang: '../assets/js/lang'+langCode+'.json'
 };
 
 // Função para carregar JSON
 function loadJSON(url, callback) {
     fetch(url)
         .then(response => {
-            if (!response.ok) throw new Error(`Erro ao buscar JSON: ${response.statusText}`);
+            if (!response.ok) throw new Error('Erro ao buscar JSON: ${response.statusText}');
             return response.json();
         })
         .then(data => callback(data))
@@ -27,7 +28,7 @@ function loadJSON(url, callback) {
 
 // Atualiza os textos da página
 function updateTexts(jsonData, prefix) {
-    document.querySelectorAll(`[data-i18n^="${prefix}."]`).forEach(el => {
+    document.querySelectorAll('[data-i18n^="${prefix}."]').forEach(el => {
         const keys = el.getAttribute("data-i18n").split(".");
         let value = jsonData;
 
@@ -60,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
             data.services.forEach(service => {
                 const item = document.createElement("div");
                 item.classList.add("list-group-item");
-                item.innerHTML = `
-                    <h5 class="mb-1" data-i18n="useful_services.services.${service.id}.title">${service.name}</h5>
+                item.innerHTML = 
+                    `<h5 class="mb-1" data-i18n="useful_services.services.${service.id}.title">${service.name}</h5>
                     <p class="mb-1" data-i18n="useful_services.services.${service.id}.desc">${service.desc}</p>
                     <div class="text-end mt-3">
                         <a href="${service.id}/details.html" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-1"
