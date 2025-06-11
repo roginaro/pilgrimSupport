@@ -4,14 +4,14 @@ const langCode = path.includes('/pt/') ? 'Pt' : 'En';
 
 // Evita cache durante o desenvolvimento
 const cacheBuster = '?v=${Date.now()}';
-
+const domain = 'https://roginaro.github.io/pilgrimSupport/assets'
 // URLs dos arquivos JSON
 const jsonFiles = {
-    restaurants: '../assets/data/restaurants.json',
-    pharmacies: '../assets/data/pharmacies.json',
-    others: '../assets/data/others.json',
-    useful_services: '../assets/data/useful_services.json',
-    lang: '../assets/js/lang'+langCode+'.json'
+    restaurants: domain+'/data/restaurants.json',
+    pharmacies: domain+'/data/pharmacies.json',
+    others: domain+'/data/others.json',
+    useful_services: domain+'/data/useful_services.json',
+    lang: domain+'/js/lang'+langCode+'.json'
 };
 
 // Função para carregar JSON
@@ -60,8 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data.services.forEach(service => {
                 const item = document.createElement("div");
                 item.classList.add("list-group-item");
-                item.innerHTML = 
-                    `<h5 class="mb-1" data-i18n="useful_services.services.${service.id}.title">${service.name}</h5>
+                item.innerHTML = `<h5 class="mb-1" data-i18n="useful_services.services.${service.id}.title">${service.name}</h5>
                     <p class="mb-1" data-i18n="useful_services.services.${service.id}.desc">${service.desc}</p>
                     <div class="text-end mt-3">
                         <a href="${service.id}/details.html" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-1"
@@ -69,8 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <i class="fas fa-search"></i>
                             <span data-i18n="useful_services.lbl_viewMore">Ver mais</span>
                         </a>
-                    </div>
-                `;
+                    </div>`;
                 servicesList.appendChild(item);
             });
         } else {
