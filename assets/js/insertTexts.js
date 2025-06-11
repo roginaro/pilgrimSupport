@@ -10,7 +10,6 @@ const jsonFiles = {
     restaurants: '../assets/data/restaurants.json',
     pharmacies: '../assets/data/pharmacies.json',
     others: '../assets/data/others.json',
-    // others: '../../assets/data/others.json${cacheBuster}',
     useful_services: '../assets/data/useful_services.json',
     lang: '../assets/js/lang'+langCode+'.json'
 };
