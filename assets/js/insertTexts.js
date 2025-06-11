@@ -1,32 +1,82 @@
-
-
 // Detecta o idioma com base na URL
-
 const path = window.location.pathname;
 const langCode = path.includes('/pt/') ? 'Pt' : 'En';
 
-//Descomente esta linha para evitar cache durante o desenvolvimento
-//Comente esta linha para produção (sem cache buster)
+// Evita cache durante o desenvolvimento
 const cacheBuster = `?v=${Date.now()}`;
 
-const jsonUrl = `https://roginaro.github.io/pilgrimSupport/assets/js/lang${langCode}.json${cacheBuster}`;
- console.log(jsonUrl);
-fetch(jsonUrl)
+// URLs dos arquivos JSON
+const jsonFiles = {
+    restaurants: `../../assets/data/restaurants.json${cacheBuster}`,
+    pharmacies: `../../assets/data/pharmacies.json${cacheBuster}`,
+    others: `../../assets/data/others.json${cacheBuster}`,
+    useful_services: `../../assets/data/useful_services.json${cacheBuster}`,
+    lang: `../../assets/js/lang${langCode}.json${cacheBuster}`
+};
 
-    .then(response => response.json())
-    .then(lang => {
-        console.log(lang);
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const path = el.getAttribute('data-i18n').split('.');
-            let value = lang;
-            for (const key of path) {
-                value = value?.[key];
-                if (value === undefined) break;
-            }
-            if (value !== undefined) {
-                el.textContent = value;
+// Função para carregar JSON
+function loadJSON(url, callback) {
+    fetch(url)
+        .then(response => {
+            if (!response.ok) throw new Error(`Erro ao buscar JSON: ${response.statusText}`);
+            return response.json();
+        })
+        .then(data => callback(data))
+        .catch(error => console.error("Erro ao carregar JSON:", error));
+}
+
+// Atualiza os textos da página
+function updateTexts(jsonData, prefix) {
+    document.querySelectorAll(`[data-i18n^="${prefix}."]`).forEach(el => {
+        const keys = el.getAttribute("data-i18n").split(".");
+        let value = jsonData;
+
+        keys.forEach(key => {
+            if (value && value[key]) {
+                value = value[key];
+            } else {
+                value = null;
             }
         });
-    })
-    .catch(error => console.error('Erro ao carregar JSON:', error));
+
+        if (value) {
+            el.textContent = value;
+        }
+    });
+}
+
+// Carrega e preenche os serviços
+document.addEventListener("DOMContentLoaded", function () {
+    // Carrega o JSON de idioma primeiro para atualizar os textos
+    loadJSON(jsonFiles.lang, data => {
+        updateTexts(data, "useful_services");
+        updateTexts(data, "btnGeral"); // Para botão "Voltar"
+    });
+
+    // Carrega os serviços úteis do banco de dados
+    loadJSON(jsonFiles.useful_services, data => {
+        const servicesList = document.getElementById("services-list");
+        if (servicesList && data.services) {
+            data.services.forEach(service => {
+                const item = document.createElement("div");
+                item.classList.add("list-group-item");
+                item.innerHTML = `
+                    <h5 class="mb-1" data-i18n="useful_services.services.${service.id}.title">${service.name}</h5>
+                    <p class="mb-1" data-i18n="useful_services.services.${service.id}.desc">${service.desc}</p>
+                    <div class="text-end mt-3">
+                        <a href="${service.id}/details.html" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-1"
+                            title="Ver mais detalhes">
+                            <i class="fas fa-search"></i>
+                            <span data-i18n="useful_services.lbl_viewMore">Ver mais</span>
+                        </a>
+                    </div>
+                `;
+                servicesList.appendChild(item);
+            });
+        } else {
+            servicesList.innerHTML = "<p class='text-danger'>Nenhum serviço disponível no momento.</p>";
+        }
+    });
+});
+
 
